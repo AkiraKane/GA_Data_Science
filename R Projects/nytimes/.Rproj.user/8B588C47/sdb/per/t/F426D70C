@@ -1,0 +1,16 @@
+{
+    "contents" : "\nlibrary(ggplot2)\n\n\nnytimes = read.csv('/users/alexandersedgwick/dropbox/development/ga/data/sandbox/nytimes_clean.csv')\n\n\n# for (i in 1:30) {\n#   url_data <- read.csv(url(paste(\"http://stat.columbia.edu/~rachel/datasets/nyt\",i,\".csv\", sep=\"\")))\n#   \n#   if (exists(\"nytimes\") == T) {\n#     nytimes <- rbind(nytimes, url_data)\n#   }\n#   else {\n#     nytimes <- url_data\n#   }\n#   rm(url_data)\n# }\n# \n# save(nytimes, file=\"/users/alexandersedgwick/dropbox/development/ga/R Projects/nytimes/nytimes.rda\")\n# load(\"/users/alexandersedgwick/dropbox/development/ga/R Projects/nytimes/nytimes.rda\")\n# \n# \n# names(nytimes)\n# \n# nytimes$Ctr <- nytimes$Clicks/nytimes$Impressions\n# \n# model <- lm(nytimes$Ctr ~ nytimes$Age + nytimes$Gender)\n\nnytimes$Gender[nytimes$Gender==1] <- 'M'\nnytimes$Gender[nytimes$Gender==0] <- 'F'\n\nggplot(nytimes, aes(x=Age, y=Ctr, group=Gender,colour=Gender)) + \n  geom_point()\n\nlibrary(rpart)\nlibrary(rpart.plot)\n\ntree <- rpart(nytimes$Ctr ~ nytimes$Age + nytimes$Gender , data=nytimes, method='class')\nprint(tree)\nplot(tree)\ntext(tree)\n\n\n\n\n\n\n\n\n",
+    "created" : 1379470581501.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4170940314",
+    "id" : "F426D70C",
+    "lastKnownWriteTime" : 1380388615,
+    "path" : "~/Dropbox/Development/GA/R Projects/nytimes/data analysis.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

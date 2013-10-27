@@ -1,0 +1,21 @@
+{
+    "contents" : "",
+    "created" : 1379551395288.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A883F13D",
+    "lastKnownWriteTime" : 4547497536,
+    "path" : null,
+    "properties" : {
+        "caption" : "nytimes",
+        "contentUrl" : "content?title=nytimes&file=3e11a2625afc4cc5b766b5b805e13e10.htm",
+        "displayedObservations" : 387,
+        "displayedVariables" : 4,
+        "totalObservations" : 387,
+        "variables" : 4
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}

@@ -1,0 +1,9 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+mammals = pd.read_csv('/users/alexandersedgwick/dropbox/development/ga/data/sandbox/mammals.csv')
+plt.scatter(mammals['body'], mammals['brain'])
+plt.show()
+plt.hist(mammals['body'], bins=range(0, 10000, 100))
+plt.show()
+plt.hist(mammals['brain'], bins=range(0, 10000, 100))
+plt.show()

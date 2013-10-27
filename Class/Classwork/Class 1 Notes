@@ -1,0 +1,61 @@
+Data Science Leading Qualities
+
+Creativity
+Statistical Background
+Some programming ability
+Domain knowledge
+Communication skills
+Patience
+
+
+Company Examples
+
+Netflix 
+Facebook
+Any retail website
+
+
+Common Steps
+
+Identify the problem
+Acquiring data
+Cleaning or Data munging
+Exploring or visualizing the data
+Create model
+Communicate the results (present)
+
+
+Work flow is iterative....often you cycle back between steps as you do analysis
+
+
+
+ls
+ls -ln
+ls -a
+
+cat
+less
+
+mkdir
+
+open . - open terminal gui
+
+touch - create file
+
+mv - renames file
+
+echo 'files can be written this way' > text.txt
+
+curl http://stat.columbia.edu/~rachel/datasets/nyt1.csv > nytimes.csv 
+
+head nytimes.csv
+tail nytimes.csv
+
+
+
+
+
+
+
+
+
